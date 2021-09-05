@@ -1,0 +1,55 @@
+:root {
+  --primary: #ec5242;
+  --secondary: #272a31;
+  --tertiary: #d3d3d3;
+  --background: #f7f7f9;
+  --dark-text: #515151;
+  --bg-white: #fff;
+}
+
+* {
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  position: relative;
+  background-color: #f7f7f9;
+}
+
+@font-face {
+  font-family: cocogoose;
+  src: url(../fonts/Cocogoose.ttf);
+  font-weight: bold;
+}
+
+.ff-2 {
+  font-family: "Cocogoose", sans-serif;
+}
+
+.color-tertiary {
+  color: #d3d3d3;
+}
+
+.color-primary {
+  color: #ec5242;
+}
+
+.bg-primary {
+  background-color: #ec5242;
+}
+
+.color-white-text {
+  color: #fff;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.color-dark-text {
+  color: #515151;
+}
+
+.bg-dark {
+  background-color: #272a31;
+}
