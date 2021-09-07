@@ -9,6 +9,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/main.css">
   <link
     href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300&amp;display=swap"
     rel="stylesheet">
@@ -16,7 +18,144 @@
 </head>
 
 <body>
+  <header>
+    <nav class="small-nav bg-dark">
+      <div class="fbt">
+        <a href="https://facebook.com">
+          <i class="fab fa-facebook-f" aria-hidden="true"></i>
+        </a>
+        <a href="http://twitter.com">
+          <i class="fab fa-twitter" aria-hidden="true"></i>
+        </a>
+      </div>
+      <ul class="small-bar-actions">
+        <li><button>Logout</button></li>
+        <li><button>Mypage</button></li>
+        <li><button>English</button></li>
+      </ul>
+    </nav>
+    <nav class="lg-navbar">
 
+      <a class="my-logo-container" href="./"><img class="my-logo" src="./images/download.png" alt="namm logo"></a>
+
+      <button type="button" class="toggle-btn color-dark-text">
+        <img class="bars-fw1 bars-fw1-fs" src="./images/iconmonstr-menu-1.svg" alt="harmburger" aria-hidden="true">
+      </button>
+      <ul class="lg-nav-link">
+        <li class="nav-item"><a class="nav-links" href="./about.html">About</a></li>
+        <li class="nav-item"><a class="nav-links" href="#program">Program</a></li>
+        <li class="nav-item"><a class="nav-links" href="#join">Join</a></li>
+        <li class="nav-item"><a class="nav-links" href="#sponsor">Sponsor</a></li>
+        <li class="nav-item"><a class="nav-links" href="#news">News</a></li>
+        <li class="nav-item"><a class="nav-links" href="#namm">NAMM</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="headline">
+      <div class="headline-content">
+        <h6 class="mission color-primary">"Promoting the pleasures and benefits of making music"</h6>
+        <div class="main-header">
+          <h1 class="header-1 ff-2">THE NATIONAL ASSOCIATION OF MUSIC MERCHANTS SHOW 2022</h1>
+        </div>
+        <div class="desc-box bg">
+          <p class="color-dark-text">we urge you to make plans to exhibit at the upcoming NAMM show, an in-person event
+            set to reunite our
+            global
+            communities, continue to power our industry's recovery, and create a more musical world.</p>
+        </div>
+        <div class="control-header-1">
+          <h3 class="header-2 color-dark-text ff-2">2022.20.01(THUR) ~ 23 (SUN)</h3>
+        </div>
+        <p class="color-dark-text ">📍 Anaheim Convention Center • Southern California <br><span
+            class="time color-dark-text ff-2"> - 10-AM PROMPT</span></p>
+      </div>
+    </section>
+
+    <section class="program bg-dark color-white-text">
+      <h2 class="program-heading">
+        Main Program
+      </h2>
+      <div class="line bg-primary"></div>
+
+      <ul class="program-list">
+
+        <li class="frames flex-only">
+          <div class="program-item">
+            <i class="fas fa-guitar bars-fw1 bars-fw1-fs" aria-hidden="true"></i>
+            <h6 class="color-primary program-title">Guitarist</h6>
+            <p class="program-desc">Enjoy live performance from reknowed guitarist</p>
+          </div>
+        </li>
+
+        <li class="frames flex-only">
+          <div class="program-item">
+            <i class="fa fa-headphones bars-fw1 bars-fw1-fs" aria-hidden="true"></i>
+            <h6 class="color-primary program-title">Music</h6>
+            <p class="program-desc">Listen to musical performance from different musicians</p>
+          </div>
+        </li>
+
+        <li class="frames flex-only">
+          <div class="program-item">
+            <i class="fas fa-drum bars-fw1 bars-fw1-fs" aria-hidden="true"></i>
+            <h6 class="color-primary program-title">Drums</h6>
+            <p class="program-desc">Watch professional drummers do live drum solos</p>
+          </div>
+        </li>
+
+        <li class="frames flex-only">
+          <div class="program-item">
+            <i class="fas fa-utensils bars-fw1 bars-fw1-fs" aria-hidden="true"></i>
+            <h6 class="color-primary program-title">Foods/<br>Beverages</h6>
+            <p class="program-desc">Enjoy the best cuisine in southern California</p>
+          </div>
+        </li>
+
+        <li class="frames flex-only">
+          <div class="program-item">
+            <i class="fas fa-trophy bars-fw1 bars-fw1-fs" aria-hidden="true"></i>
+            <h6 class="color-primary program-title">Award<br>winners</h6>
+            <p class="program-desc">NAMM issues the top 100 Dealer Awards</p>
+          </div>
+        </li>
+      </ul>
+
+      <div class="attend-btn-container flex-only">
+        <button class="attend-btn bg-primary color-white-text">
+          Attend NAMM 2022
+        </button>
+      </div>
+
+    </section>
+
+    <section class="speakers"></section>
+
+    <section class="partners bg-dark">
+      <h2 class="partners-heading color-white-text">
+        Partners
+      </h2>
+      <div class="line bg-primary partners-line"></div>
+
+      <div class="partners-logos">
+        <img class="partners-image image-container" src="./images/partners/image2vector.svg" alt="mozilla ">
+        <img class="partners-image image-container" src="./images/partners/google.svg" alt="google">
+        <img class="partners-image image-container" src="./images/partners/naver.svg" alt="naver">
+        <img class="partners-image image-container" src="./images/partners/tokopedia.png" alt="zoom">
+        <img class="partners-image image-container" src="./images/airbnb.svg" alt="tokopedia">
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-sect flex-only bg-white">
+    <div class="footer-container flex-only">
+
+      <a class="footer-logo-container" href=""><img class="footer-logo" src="./images/download.png" alt="namm logo"></a>
+      <small class="footer-logo-desc color-dark-text">&copy; NAMM 2021. Some Rights
+        Reserved</small>
+    </div>
+  </footer>
 </body>
 
 </html>
