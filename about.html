@@ -19,7 +19,7 @@
 
 <body>
   <header>
-    <nav class="small-nav bg-dark">
+    <nav class="small-nav bg-dark color-white-text">
       <div class="fbt">
         <a href="https://facebook.com">
           <i class="fab fa-facebook-f" aria-hidden="true"></i>
@@ -29,25 +29,26 @@
         </a>
       </div>
       <ul class="small-bar-actions">
-        <li><button>Logout</button></li>
-        <li><button>Mypage</button></li>
-        <li><button>English</button></li>
+        <li><button class="color-white-text">Logout</button></li>
+        <li><button class="color-white-text">Mypage</button></li>
+        <li><button class="color-white-text">English</button></li>
       </ul>
     </nav>
-    <nav class="lg-navbar">
 
-      <a class="my-logo-container" href="./"><img class="my-logo" src="./images/download.png" alt="namm logo"></a>
+    <button type="button" class="toggle-btn color-dark-text">
+      <img class="bars-fw1 bars-fw1-fs" src="./images/iconmonstr-menu-1.svg" alt="harmburger" aria-hidden="true">
+    </button>
 
-      <button type="button" class="toggle-btn color-dark-text">
-        <img class="bars-fw1 bars-fw1-fs" src="./images/iconmonstr-menu-1.svg" alt="harmburger" aria-hidden="true">
-      </button>
+    <nav class="lg-navbar bg-white">
+      <a class="namm-logoo-a" href="./"><img class="namm-logoo" src="./images/download.png" alt="namm logo"></a>
+
       <ul class="lg-nav-link">
-        <li class="nav-item"><a class="nav-links" href="./about.html">About</a></li>
-        <li class="nav-item"><a class="nav-links" href="#program">Program</a></li>
-        <li class="nav-item"><a class="nav-links" href="#join">Join</a></li>
-        <li class="nav-item"><a class="nav-links" href="#sponsor">Sponsor</a></li>
-        <li class="nav-item"><a class="nav-links" href="#news">News</a></li>
-        <li class="nav-item"><a class="nav-links" href="#namm">NAMM</a></li>
+        <li><a class="nav-links visited" href="./about.html">About</a></li>
+        <li><a class="nav-links" href="#program">Program</a></li>
+        <li><a class="nav-links" href="#join">Join</a></li>
+        <li><a class="nav-links" href="#sponsor">Sponsor</a></li>
+        <li><a class="nav-links" href="#news">News</a></li>
+        <li><a class="nav-links join-namm-btn" href="#join-namm">NAMM 2022</a></li>
       </ul>
     </nav>
   </header>
@@ -75,9 +76,11 @@
                   class="color-secondary">zieecosam@gmail.com</small></a></u></strong>
         </div>
       </div>
+    </section>
 
+    <section class="feature bg-white">
       <article class="logo-info">
-        <div class="about-logo">
+        <div class="feature-logo">
           <h3 class="color-secondary text-center">
             National Association of Music Merchants 2022 Logo
           </h3>
@@ -94,6 +97,7 @@
         </div>
       </article>
 
+
       <article class="pst-occurence">
         <div class="pst-container">
           <h3 class="pst-heading color-secondary">
@@ -106,7 +110,8 @@
           <ul class="card-container">
             <li class="card color-white bg-primary">
               <a href="#namm-show">
-                <img class="card-images image-container" src="./images/OCR.jpg" alt="namm image">
+                <img class="card-images image-container"
+                  src="./images/Lee-Ritenour-on-the-Yamaha-stage-at-Winter-NAMM-2018.jpg" alt="namm image">
                 <div class="card-body-block">
                   <h3 class="color-white-text fnt-22">2020</h3>
                   <p class="text-center sm-fnt color-white-text">NAMM conference in Vancouver, Canada</p>
@@ -116,7 +121,7 @@
 
             <li class="card color-white bg-primary">
               <a href="#namm-show">
-                <img class="card-images image-container" src="./images/1985.jpg" alt="namm image">
+                <img class="card-images image-container" src="./images/namm19vsavovv.0.jpg" alt="namm image">
                 <div class="card-body-block">
                   <h3 class="color-white-text fnt-22">2019</h3>
                   <p class="text-center sm-fnt color-white-text">NAMM conference in Manchester, UK.
@@ -127,8 +132,9 @@
           </ul>
         </div>
       </article>
-
     </section>
+
+
     <section class="partners bg-dark">
       <h2 class="partners-heading color-white-text">
         Partners
