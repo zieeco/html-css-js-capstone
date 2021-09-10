@@ -51,8 +51,11 @@ To get a local copy up and running:
 
 ## Credits
 
-- The original design ideal by [Cindy Shin in Behance](https://www.behance.net/adagio07) from [Microverse](https://bit.ly/MicroverseTN)
+- The original design ideal by [Cindy Shin in Behance](https://www.behance.net/adagio07)
+
+- Project from [Microverse](https://bit.ly/MicroverseTN) html & css module
 - Images inspired by this [All avatar images](https://pravatar.cc/images)
+
 
 ## Contributing
 
