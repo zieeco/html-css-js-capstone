@@ -45,7 +45,6 @@ const featuredSpeakers = [
     image: './images/speakers/speaker1.jpeg',
     name: 'Yochai',
     speakerInfo: 'Berkman Professor of Entrepreneurial Lgal Studies at Harvard LawSchool',
-    // breakLine: '',
     description: 'Benkler studies commons-based peer production, and published his seminial book The Wealth of Networkds in 2006.',
   },
 
@@ -53,7 +52,6 @@ const featuredSpeakers = [
     image: './images/speakers/speaker2.jpeg',
     name: 'Yochai Benkler',
     speakerInfo: 'Director of Art Center Nabi and a board member of CC Korea',
-    // breakLine: '',
     description: 'As the main venue for new media art production in Korea, Nabi promotes cross-disciplinary collaboration and understanding among scient technology, humanities, and the arts.',
   },
 
@@ -61,7 +59,6 @@ const featuredSpeakers = [
     image: './images/speakers/speaker3.jpeg',
     name: 'Ryan Merkley',
     speakerInfo: 'CEO of Create Commons, ex COO of the Mozilla Foundation',
-    // breakLine: '',
     description: 'Ryan had been leading open-source projects at the Mozilla Foundation such as the open source movement.',
   },
 
@@ -69,7 +66,6 @@ const featuredSpeakers = [
     image: './images/speakers/speaker4.jpeg',
     name: 'Julia Leda',
     speakerInfo: 'President of Young Pirates of Europe',
-    // breakLine: '',
     description: 'Europen ingetration, political democray and participation of youth through online as her major condem, Reda\'s report outlining potential changes to EU copyright law was approved by the Parliament in July.',
   },
 
@@ -77,7 +73,6 @@ const featuredSpeakers = [
     image: './images/speakers/speaker5.jpeg',
     name: 'Lila Tretikov',
     speakerInfo: 'Executive Director of the Wikimedia Foundation',
-    // breakLine: '',
     description: 'Lila Tretikov is the Executive Director of the Wikimedia Foundation, the nonprofit organization that operates Wikipedia. Wikipedia is freely available in 290 language and used by nearly half a billion people around the world every month.',
   },
 
@@ -85,7 +80,6 @@ const featuredSpeakers = [
     image: './images/speakers/speaker6.jpeg',
     name: 'Kilnam Chon',
     speakerInfo: 'President of Dallas group of Designers',
-    // breakLine: '',
     description: 'Europen ingetration, political democray and participation of youth through online as her major condem, Reda\'s report outlining potential changes to EU copyright law was approved by the Parliament in July.',
   },
 
