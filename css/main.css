@@ -66,6 +66,10 @@ body {
   background-color: var(--secondary);
 }
 
+.color-2 {
+color:#d93a29;
+}
+
 .header-1 {
   font-size: 2.125rem;
   line-height: 3.25rem;
@@ -75,6 +79,10 @@ body {
   line-height: 1.875rem;
   font-size: 1.25rem;
   margin: 0 0 0.75rem 0;
+}
+
+.flex-only {
+  display: flex;
 }
 
 header {
@@ -102,13 +110,15 @@ header .lg-navbar .namm-logoo {
 /* hiding for mobile */
 @media screen and (max-width: 767px) {
   header .lg-navbar,
-  header .small-nav {
+  header .small-nav,
+  .program .whole-program {
     display: none;
   }
 }
 
 @media screen and (min-width: 768px) {
-  header .toggle-btn {
+  header .toggle-btn,
+  .attend-btn-container {
     display: none;
   }
 
@@ -129,17 +139,15 @@ header .lg-navbar .namm-logoo {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    /* padding: 0 0.75rem; */
     min-height: 3rem;
     padding: 0 10%;
   }
 
   .lg-nav-link .join-namm-btn {
-    border: 3px solid #ec5242;
+    border: 3px solid var(--primary);
     box-sizing: border-box;
     padding: 0.25rem 0.5rem;
-    color: #ec5748;
+  color: #f51d1d;
     font-size: 0.75rem;
   }
 }
@@ -379,7 +387,8 @@ header .lg-navbar .my-logo {
   }
 }
 
-.program {
+.program,
+.featured-speakers {
   padding: 1.5rem 0.75rem;
   display: flex;
   flex-direction: column;
@@ -387,18 +396,21 @@ header .lg-navbar .my-logo {
   align-items: center;
 }
 
-.flex-only {
-  display: flex;
-}
-
 .program-heading,
+.fs-heading,
 .partners-heading,
 .pst-heading {
   text-align: center;
   font-size: 1.125rem;
 }
 
-.line {
+.featured-speakers .break-line {
+  align-self: center;
+  background-color: var(--tertiary);
+}
+
+.line,
+.featured-speakers .break-line {
   width: 1.78125rem;
   align-self: center;
   margin: 0.75rem 0;
@@ -425,6 +437,45 @@ header .lg-navbar .my-logo {
   padding: 1rem;
 }
 
+.featured-speakers {
+  background-image: none;
+}
+
+.featured-speakers .fs-container-grid {
+  display: grid;
+  grid-auto-rows: 1fr;
+  margin: 1.5rem 0;
+  gap: 1.25rem;
+  width: 100%;
+}
+
+.featured-speakers .speaker-profile {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.featured-speakers .speaker-profile .speaker-image {
+  height: 6.25rem;
+}
+
+.featured-speakers .speaker-description {
+  line-height: 1.125rem;
+  font-size: 0.875rem;
+}
+
+.fw-bold {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .featured-speakers .fs-container-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    margin: 2.25rem 0;
+  }
+}
+
 .bars-fw1-fs {
   font-size: 1.5rem;
 }
@@ -438,7 +489,8 @@ header .lg-navbar .my-logo {
 }
 
 @media screen and (min-width: 768px) {
-  .program {
+  .program,
+  .featured-speakers {
     padding: 5% 10%;
   }
 
@@ -454,6 +506,12 @@ header .lg-navbar .my-logo {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+  }
+
+  .program .whole-program {
+    display: block;
+    text-decoration: underline;
+    cursor: pointer;
   }
 }
 
@@ -514,10 +572,6 @@ header .lg-navbar .my-logo {
 }
 
 @media screen and (min-width: 768px) {
-  .partners {
-    padding: 5% 10%;
-  }
-
   .partners .partners-logos img {
     width: 15%;
   }
@@ -541,6 +595,47 @@ header .lg-navbar .my-logo {
   display: flex;
 }
 
-.footer-sect .footer-container .footer-logo-desc {
+.footer-sect .footer-container .footer-logo-desc,
+.featured-speakers .speaker-info {
   font-size: 0.8125rem;
+}
+
+
+.menu-content {
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #ee7f76;
+  backdrop-filter: blur(4px);
+  overflow-y: auto;
+}
+
+
+.menu-content .x-menu {
+  display: flex;
+  align-self: flex-end;
+  padding: 3.75rem 2.375rem;
+}
+
+.menu-content .menu-list-item {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.menu-content a {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #fff;
+}
+
+.menu-content .x-menu:hover,
+.menu-content a:hover {
+  cursor: pointer;
 }
